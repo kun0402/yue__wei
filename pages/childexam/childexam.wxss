@@ -1,0 +1,64 @@
+/* pages/childexam/childexam.wxss */
+.question {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  padding-top: 100rpx;
+  align-items: center;
+}
+.title{
+  margin-left: 10%;
+  margin-right: 10%;
+  width: 70%;
+  border: 1px dashed gray;
+  padding-left: 5%;
+  padding-right: 5%;
+  padding-top: 10%;
+  padding-bottom: 10%;
+  text-align: center;
+  font-size: 45rpx;
+}
+.option{
+  margin-left: 10%;
+  margin-right: 10%;
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  margin-top: 50rpx;
+}
+.option_item{
+  background-color: rgb(221, 216, 216);
+  padding: 20rpx 40rpx;
+  margin-bottom: 25rpx;
+}
+.btn{
+  padding-right: 15%;
+  padding-left: 15%;
+  width: 70%;
+  display: flex;
+  flex-direction: row;
+  font-size: 20rpx;
+}
+.btn_previous{
+  background-color: rgb(25, 204, 49);
+  font-size: 30rpx;
+  margin-right: 10rpx;
+}
+.btn_next{
+  background-color: rgb(25, 204, 49);
+  font-size: 30rpx;
+  margin-right: 10rpx;
+}
+.next{
+  margin-left: 10%;
+  width: 80%;
+}
+.previous{
+ 
+  width: 80%;
+}
+.success{
+  background-color: rgb(49, 245, 10);
+  color: #fff;
+}

@@ -1,0 +1,8 @@
+<!--pages/login/login.wxml-->
+<view class="img"><image src="../Img/login.png" mode="widthFix" style="width: 100%;"></image></view>
+<view class="button">
+<button bindtap="answer_question" class="but">进入测试</button>
+<text>\n</text>
+<button bindtap="skip" class="but skip">跳过</button>
+</view>
+

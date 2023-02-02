@@ -1,0 +1,45 @@
+<!--index.wxml-->
+<!--
+  <view class="container">
+  <view class="userinfo">
+    <block wx:if="{{canIUseOpenData}}">
+      <view class="userinfo-avatar" bindtap="bindViewTap">
+        <open-data type="userAvatarUrl"></open-data>
+      </view>
+      <open-data type="userNickName"></open-data>
+    </block>
+    <block wx:elif="{{!hasUserInfo}}">
+      <button wx:if="{{canIUseGetUserProfile}}" bindtap="getUserProfile"> 获取头像昵称 </button>
+      <button wx:elif="{{canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 获取头像昵称 </button>
+      <view wx:else> 请使用1.4.4及以上版本基础库 </view>
+    </block>
+    <block wx:else>
+      <image bindtap="bindViewTap" class="userinfo-avatar" src="{{userInfo.avatarUrl}}" mode="cover"></image>
+      <text class="userinfo-nickname">{{userInfo.nickName}}</text>
+    </block>
+  </view>
+  <view class="usermotto">
+    <text class="user-motto">{{motto}}</text>
+  </view>
+</view>
+-->
+<image mode="widthFix" src="../Img/head.jpeg" ></image>
+<view class="commet">云兔app</view>
+<view class="body">
+<view>
+苏霍姆林斯基说过这样一句话“孩子的阅读开始越早，阅读时思维过程越复杂，阅读时对智力发展就越有益”。著名儿童文学作家梅子涵教授也曾说过“童年短暂，但因为有了优质阅读，孩子的一生都有可能优质”这些无不说明，读书对儿童有多重要。当然，孩子对阅读的“精神饥饿感”形成于14岁之前，父母是否在小孩5岁以前经常讲故事，影响着孩子今后阅读技巧的形成，所以，孩子早期的经验对成长非常重要
+</view>
+<view>阅读带给孩子五大好处：</view>
+<view>1、增强语言能力。喜爱阅读的孩子语言能力特强，在听、说、读、写方面比不爱阅读的孩子高，孩子从书中领悟复杂的意念，欣赏语言的美妙。</view>
+<view>2、增加知识。阅读使孩子涉猎多方面的知识，文学、历史、地理、科学、政治等，增广见闻，对学学习大有裨益。</view>
+<view>3、提升写作能力。喜欢阅读使孩子掌握的语言文字能力，往往超越同级同学，不必背诵、强记课文而能取得好成绩，在校外考试也能取得佳绩，因为阅读提升了写作能力。</view>
+<view>4、培养想象能力。书中世界广阔无垠，充满想象、好奇与机遇。不论现实世界如何狭隘枯燥，但爱阅读的孩子理想远大，梦想无穷，给他们带来无限的创意。</view>
+<view>
+5、养成独立思考能力。阅读可培养批判性思考能力，书中复杂的论证及情节，孩子都能力边读边吸收，边分析边理解，阅读让孩子具有独立思考的能力。</view>
+</view>
+
+
+
+
+
+

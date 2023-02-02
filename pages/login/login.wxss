@@ -1,0 +1,27 @@
+/* pages/login/login.wxss */
+.button{
+  width: 80%;
+  height: 300rpx;
+  margin-top:100rpx ;
+  margin-left: 10%;
+  margin-right: 10%;
+}
+.img{
+  width: 100%;
+}
+.but{
+  background-color: #04be01;
+  width: 70%;
+  height: 85rpx;
+  border-radius: 10rpx;
+  font-size: 35rpx;
+  color: white;
+  align-content: center;
+  margin-left: 15%;
+  margin-right: 15%;
+  font-weight: bold;
+}
+.skip{
+  background-color: #808080 ;
+  
+}

@@ -1,0 +1,17 @@
+
+<view class="img">
+<image src="../Img/main.png" mode="widthFix" style="width: 100%;"></image>
+</view>
+<view class="container">
+  <view class="userinfo">
+  
+    <block wx:if="{{!hasUserInfo}}" >
+      <button wx:if="{{canIUseGetUserProfile}}" bindtap="getUserProfile" class="but"> 微信授权一键登录 </button>
+      <button wx:else open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 微信授权一键登录 </button>
+    </block>
+    <block wx:else>
+      <!-- <image bindtap="bindViewTap" class="userinfo-avatar" src="{{userInfo.avatarUrl}}" mode="width"></image>
+      <text class="userinfo-nickname">{{userInfo.nickName}}</text> -->
+    </block>
+  </view>
+</view>

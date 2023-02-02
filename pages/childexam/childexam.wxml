@@ -1,0 +1,16 @@
+<!--pages/childexam/childexam.wxml-->
+
+<view class="question">
+  <view class="title">{{nowQuestion+1}}，{{list[nowQuestion].title}}</view>
+  <view class="option">
+    <view class="option_item {{select===optionList[index]? status:''}}" bindtap="selectAnswer" data-item="{{optionList[index]}}" wx:for="{{ list[nowQuestion].option}}" wx:key="id">{{optionList[index]}}、{{item}}</view>
+   
+  </view>
+  <view class="btn">
+    <view class="previous"><button bindtap="previous" class="btn_previous" style="width: 100%;">上一题</button></view>
+    <view wx:if="{{nowQuestion+1===2}}" class="next"><button bindtap="submit" class="btn_next" style="width: 100%;">提交</button></view>
+    <view wx:else class="next"><button bindtap="next" class="btn_next" style="width: 100%;">下一题</button></view>
+
+  </view>
+
+</view>

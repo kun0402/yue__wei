@@ -1,0 +1,43 @@
+/* pages/myinfo/myinfo.wxss */
+@import "/pages/bottom_menu/bottom_menu";
+.img{
+  width: 22%;
+  display: flex;
+  margin-left: 39%;
+  justify-content: center;
+}
+.nickname{
+  text-align: center;
+  font-size: 37rpx;
+  color: rgb(66, 65, 65);
+}
+.info{
+  height: 420rpx;
+  margin-right: 8%;
+  margin-left: 8%;
+ margin-top: 5%;
+ margin-bottom: 5%;
+ border-radius: 5rpx;
+ box-shadow:0 0 20rpx gray;
+}
+.space{
+  height: 20rpx;
+}
+.but{
+  width: 75%;
+  font-size: 25rpx;
+  border-radius: 20rpx;
+  text-align: left;
+  color: rgb(66, 66, 66);
+ 
+  box-shadow: 0 0 8rpx gray;
+}
+.button{
+  
+  font-size: 30rpx;
+  border-radius: 20rpx;
+  text-align: left;
+  color: rgb(66, 66, 66);
+ 
+  box-shadow: 0 0 8rpx gray;
+}

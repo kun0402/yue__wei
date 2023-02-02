@@ -1,0 +1,17 @@
+<!--pages/bottom_menu/bottom_menu.wxml-->
+<view class="bottomrow">
+  <view class="bottomtap">
+    <view class="home" bindtap="first_select">
+      <image class="bottomimg" src="../Img/home.png"></image>
+      <text class="bottomtext" style="color:{{firco}}"> 首页</text>
+    </view>
+    <view class="read" bindtap="second_select">
+      <image class="bottomimg" src="../Img/read.png"></image>
+      <text class="bottomtext" style="color:{{secco}}"> 阅读</text>
+    </view>
+    <view class="mine" bindtap="third_select">
+      <image class="bottomimg" src="../Img/mine.png"></image>
+      <text class="bottomtext" style="color:{{thico}}">我的</text>
+    </view>
+  </view>
+</view>

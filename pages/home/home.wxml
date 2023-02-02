@@ -1,0 +1,58 @@
+<!--pages/home/home.wxml-->
+
+<include src="/pages/bottom_menu/bottom_menu" />
+<view>
+  <swiper indicator-dots="true" indicator-color="white" indicator-active-color="orange" circular="true" autoplay="true">
+    <swiper-item wx:for="{{swiperList}}" wx:key="id">
+      <navigator url="/pages/bookread/bookread">
+        <image mode="widthFix" src="{{item.img_url}}"></image>
+      </navigator>
+    </swiper-item>
+  </swiper>
+</view>
+<scroll-view class="scroll" scroll-y="true" style="height: 80%;">
+  <view class="box" wx:for="{{booklist}}" wx:key="id">
+    <view class="onebox">
+      <view class="imgbox">
+        <image class="img" src="{{item.img1_src}}" mode="widthFix"></image>
+      </view>
+      <view class="textbox">
+        <text class="text">《{{item.book1_name}}》 </text>
+        <text>\n</text>
+        <text class="text">作者：{{item.author1}}</text>
+      </view>
+      <view class="likebox">
+        <image class="like" src="/pages/Img/like.png" mode="widthFix"></image>
+
+        <view class="btn" bindtap="detail" data-id="{{item.book1_id}}" data-name="{{item.book1_name}}">
+        <button  class="detail" style="width: 100%;">书籍详情</button>
+        </view>
+
+      </view>
+    </view>
+    <view class="onebox">
+      <view class="imgbox">
+        <image class="img" src="{{item.img2_src}}" mode="widthFix"></image>
+      </view>
+      <view class="textbox">
+        <text class="text">《{{item.book2_name}}》 </text>
+        <text>\n</text>
+        <text class="text">作者：{{item.author2}}</text>
+      </view>
+      <view class="likebox">
+        <image class="like" src="/pages/Img/like.png" mode="widthFix"></image>
+
+        <view class="btn"><button class="detail" style="width: 100%;">书籍详情</button>
+        </view>
+
+      </view>
+
+    </view>
+    
+
+
+  </view>
+
+
+
+</scroll-view>

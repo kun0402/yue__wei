@@ -1,0 +1,31 @@
+<!--pages/myinfo/myinfo.wxml-->
+
+<view class="info" wx:if="{{gender==0 && gender==1}}">
+  <image mode="widthFix" class="img" src="../Img/boy.png"></image>
+  <view class="space"><text >\n</text></view>
+  <view class="nickname">{{nickName}}</view>
+  <view class="space"><text >\n</text></view>
+  <button class="but">收藏夹</button>
+  <view class="space"><text >\n</text></view>
+  <button class="but">已领取借书优惠券的书目</button>
+</view>
+<view class="info" wx:else>
+  <image mode="widthFix" class="img" src="../Img/girl.png"></image>
+  <view class="space"><text >\n</text></view>
+  <view class="nickname">昵称：{{nickName}}</view>
+  <view class="space"><text >\n</text></view>
+  <button class="but">收藏夹</button>
+  <view class="space"><text >\n</text></view>
+  <button class="but">已领取借书优惠券的书目</button>
+</view>
+<view>
+<button style="width: 85%;" class="button">测试结果</button>
+<view class="button_space"><text >\n</text></view>
+<button style="width: 85%;" class="button">家长测试</button>
+<view class="button_space"><text >\n</text></view>
+<button style="width: 85%;" class="button">阅微小助手</button>
+<view class="button_space"><text >\n</text></view>
+<button style="width: 85%;" class="button">切换账号</button>
+</view>
+
+<include src="/pages/bottom_menu/bottom_menu" />
